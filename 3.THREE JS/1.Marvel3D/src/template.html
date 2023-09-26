@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800;900&family=Changa+One&family=Marvel:wght@400;700&family=Quintessential&family=Roboto:wght@700&family=Water+Brush&display=swap"
+      rel="stylesheet"
+    /> -->
+
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+  </head>
+  
+  <body class="" id="home">
+    <canvas class="draw"></canvas>
+    <header class="primary-header grid bg-dark">
+      <div class="logo-div flex">
+        <img
+          src="./assets/Marvel Wallpapers.jfif"
+          alt="MARVEL-LOGO"
+          class="logo"
+        />
+      </div>
+      <button class="nav-button" aria-controls="nav-ul" aria-expanded="false">
+        <span class="sr-only"> Menu </span>
+      </button>
+      <nav class="navbar">
+        <ul class="flex nav-list" id="nav-ul" data-visible="false">
+          <li class="li-underline">
+            <a class="text-white" href="#home">HOME</a>
+          </li>
+          <li class="li-underline">
+            <a class="text-white" href="#hulk">HULK</a>
+          </li>
+          <li class="li-underline">
+            <a class="text-white" href="#iron-man">IRON MAN</a>
+          </li>
+          <li class="li-underline">
+            <a class="text-white" href="#captain-america">CAPTAIN.A</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class=" ">
+      <section class="slider-section">
+        <div class="slider">
+          <div class="all-slider-image-container">
+            <!-- adding radios for image slider -->
+            <input
+              type="radio"
+              name="radio-btn"
+              id="rad-1"
+              class="slider-radio"
+            />
+            <input
+              type="radio"
+              name="radio-btn"
+              id="rad-2"
+              class="slider-radio"
+            />
+            <input
+              type="radio"
+              name="radio-btn"
+              id="rad-3"
+              class="slider-radio"
+            />
+            <input
+              type="radio"
+              name="radio-btn"
+              id="rad-4"
+              class="slider-radio"
+            />
+            <input
+              type="radio"
+              name="radio-btn"
+              id="rad-5"
+              class="slider-radio"
+            />
+
+            <!-- adding images for image slider -->
+            <div class="first-image slider-image-container">
+              <img src="./assets/shoe.png" alt="image-1" />
+            </div>
+            <div class="slider-image-container">
+              <img src="./assets/iron.png" alt="image-2" />
+            </div>
+            <div class="slider-image-container">
+              <img src="./assets/all-day.png" alt="image-3" />
+            </div>
+            <div class="slider-image-container">
+              <img src="./assets/hulk.png" alt="image-4" />
+            </div>
+            <div class="slider-image-container">
+              <img src="./assets/superman.png" alt="image-5" />
+            </div>
+          </div>
+        </div>
+
+        <!-- automate buttons/circles-->
+        <div class="auto">
+          <div class="button1" id="auto-1"></div>
+          <div class="button2" id="auto-2"></div>
+          <div class="button3" id="auto-3"></div>
+          <div class="button4" id="auto-4"></div>
+          <div class="button5" id="auto-5"></div>
+        </div>
+
+        <!-- manual buttons/circles-->
+        <div class="manual">
+          <label for="rad-1"></label>
+          <label for="rad-2"></label>
+          <label for="rad-3"></label>
+          <label for="rad-4"></label>
+          <label for="rad-5"></label>
+        </div>
+      </section>
+
+      <section class="hero-section ff-marvel">
+        <div class="first-section-div"></div>
+        <div class="first-section-image-container">
+          <!-- <img src="img/pictures/AVYYYY.png" alt="" /> -->
+        </div>
+      </section>
+
+      <section class="second-section" id="hulk">
+        <div class="card-content">
+          <div class="card-image-container">
+            <img src="./assets/hulk-edited.png" alt="" />
+          </div>
+        </div>
+        <div class="about">" I'm always <span>ANGRY</span> "</div>
+      </section>
+
+      <section class="third-section" id="iron-man">
+        <div class="card-content">
+          <div class="card-image-container">
+            <img src="./assets/Iron-man-edited.png" alt="" />
+          </div>
+        </div>
+        <div class="about">" I Am <span>Iron Man</span> "</div>
+      </section>
+
+      <section class="fourth-section" id="captain-america">
+        <div class="card-content">
+          <div class="card-image-container">
+            <img src="./assets/captain-america-edited.png" alt="" />
+          </div>
+        </div>
+        <div class="about">" I can do this <span>All Day</span> "</div>
+      </section>
+    </main>
+
+    <footer class="bg-dark">
+      <div>Copyright © 2023 Shubhransu Biswal. All Rights Reserved.</div>
+      <!-- <ul>
+            <li><a href="#">footer</a></li>
+            <li><a href="#">footer</a></li>
+            <li><a href="#">footer</a></li>
+            <li><a href="#">footer</a></li>
+        </ul> -->
+    </footer>
+
+    <!-- <script src="tilt.js"></script> -->
+    <!-- <script type="text/javascript">
+      VanillaTilt.init(document.querySelectorAll(".card-image-container"), {
+        max: 35,
+        speed: 400,
+        glare: true,
+        "max-glare": 0.5,
+        easing: "cubic-bezier(.03,.98,.52,.99)",
+        scale: 1,
+      });
+    </script> -->
+  </body>
+  
+</html>
